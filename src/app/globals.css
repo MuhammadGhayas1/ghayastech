@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-matter: "Matter", "Outfit", "Inter", sans-serif;
+  
+  --animate-floatingSmooth: floatingSmooth 6s ease-in-out infinite;
+  --animate-float-animation: float-animation 8s ease-in-out infinite;
+  --animate-fadeInUp: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  
+  @keyframes floatingSmooth {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(3deg);
+    }
+  }
+  @keyframes float-animation {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-15px) translateX(8px);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Custom CSS utilities for marquee, animations and scrollbars */
+@layer utilities {
+  .marquee-content {
+    display: inline-flex;
+    animation: marquee-scroll 20s linear infinite;
+  }
+  
+  .marquee-reverse {
+    display: inline-flex;
+    animation: marquee-scroll-reverse 20s linear infinite;
+  }
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-scroll-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+body {
+  font-family: var(--font-matter);
+  overflow-x: hidden;
+  background-color: #fafafa;
+  color: #171717;
+  scroll-behavior: smooth;
+  background-size: 44px 44px;
+  background-image: 
+    linear-gradient(to right, #f1f5f9 1.5px, transparent 1.5px),
+    linear-gradient(to bottom, #f1f5f9 1.5px, transparent 1.5px);
+}
+
