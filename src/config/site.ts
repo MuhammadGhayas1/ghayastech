@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "GhayasTech",
   title: "GhayasTech - Turning Complex Ideas Into Digital Wonders",
   description: "Premium Web Development Agency. Turning Complex Ideas Into Digital Wonders.",
-  url: "https://ghayas-tech.pages.dev",
+  url: "https://ghayastech.vercel.app",
   
   contact: {
     email: "helloghayastech@gmail.com",
@@ -29,7 +29,7 @@ export const siteConfig = {
       label: "Luxury Corporate Website",
       description: "A premium corporate identity built with Next.js, focusing on high-contrast luxury aesthetics.",
       image: "/woodacia_thumbnail.png",
-      url: "https://ghayas-tech.pages.dev",
+      url: "https://ghayastech.vercel.app",
       bullets: [
         "A premium corporate identity built with Next.js, focusing on high-contrast luxury aesthetics.",
         "Immersive visual interfaces tailored for luxury buyers and design enthusiasts.",
@@ -44,7 +44,7 @@ export const siteConfig = {
       label: "SaaS Engine",
       description: "A specialized CV optimization engine designed to streamline the job application process.",
       image: "/internkar_thumbnail.png",
-      url: "https://ghayas-tech.pages.dev",
+      url: "https://ghayastech.vercel.app",
       bullets: [
         "A specialized CV optimization engine designed to streamline the job application process.",
         "Integrates AI analysis to highlight key skills and suggest profile improvements.",
@@ -59,7 +59,7 @@ export const siteConfig = {
       label: "Mobile Application",
       description: "An offline-first mobile solution providing transit information for commuters in Punjab.",
       image: "/electricbus_thumbnail.png",
-      url: "https://ghayas-tech.pages.dev",
+      url: "https://ghayastech.vercel.app",
       bullets: [
         "An offline-first mobile solution providing transit information for commuters in Punjab.",
         "Real-time updates on electric bus schedules, active routes, and main stops.",

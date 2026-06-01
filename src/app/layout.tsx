@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     "Next.js web agency",
     "SaaS development USA"
   ],
-  metadataBase: new URL("https://ghayas-tech.pages.dev"),
+  metadataBase: new URL("https://ghayastech.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ghayas-tech.pages.dev",
+    url: "https://ghayastech.vercel.app",
     siteName: "GhayasTech",
     title: "GhayasTech - Premium Web Development & Custom Software Agency",
     description: "Specializing in high-converting booking engines and custom SaaS solutions for service-based businesses in the US and Canada. Start a Project with us today.",
@@ -53,8 +53,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "GhayasTech",
-    "image": "https://ghayas-tech.pages.dev/avatar1.png",
-    "url": "https://ghayas-tech.pages.dev",
+    "image": "https://ghayastech.vercel.app/avatar1.png",
+    "url": "https://ghayastech.vercel.app",
     "telephone": siteConfig.contact.whatsapp,
     "priceRange": "$$",
     "address": {
